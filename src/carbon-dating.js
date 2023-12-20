@@ -22,7 +22,7 @@ function dateSample(sampleActivity) {
   if(typeof sampleActivity !== "string" || Number.isNaN(parsed) || parsed <= 0 || !isFinite(parsed) || sampleActivity > MODERN_ACTIVITY) {
     return false;
   }
-  
+  //solve with: https://www.kapitza.ras.ru/~glazkov/students/isotope-dating.pdf
   return Math.ceil(HALF_LIFE_PERIOD * Math.log2(MODERN_ACTIVITY / parsed));
 }
 
