@@ -29,10 +29,12 @@ const chainMaker = {
     this.chain.splice(position - 1, 1);
     return this;
   },
+
   reverseChain() {
     this.chain.reverse();
     return this;
   },
+
   finishChain() {
     const compleatedChain = this.chain.join("~~");
     this.chain = [];
